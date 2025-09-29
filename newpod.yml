@@ -3,6 +3,8 @@ kind: Pod
 metadata:
   name: maneesh-pod
   namespace: maneesh345
+  labels:
+    app: myapp
 spec:
   containers:
     - name: maneesh-container
