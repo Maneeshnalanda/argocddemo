@@ -1,13 +1,14 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: maneesh-pod
-  namespace: maneesh345
+  name: nginx-pod
   labels:
-    app: myapp
+    app: nginx
+    env: dev
 spec:
   containers:
-    - name: maneesh-container
-      image: nginx
-      ports:
-        - containerPort: 80 
+  - name: nginx-container
+    image: nginx:latest
+    ports:
+    - containerPort: 80
+
