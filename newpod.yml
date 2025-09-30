@@ -10,4 +10,4 @@ spec:
     - name: maneesh-container
       image: nginx
       ports:
-        - containerPort: 80  
+        - containerPort: 80 
